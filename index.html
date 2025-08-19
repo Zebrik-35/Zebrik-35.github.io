@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart-Tech Home - Зарядка для Яндекс Алисы Мини 2</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="site/logo_180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="site/logo_64.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="site/logo_64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="site/pic/logo_180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="site/pic/logo_64.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="site/pic/logo_64.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -469,7 +469,7 @@
                         <i class="fas fa-times"></i>
                     </button>
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">Продукты</a></li>
+                    <li><a href="site/html/products.html">Продукты</a></li>
                     <li><a href="#">О нас</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
@@ -488,7 +488,7 @@
                 </div>
                 
                 <div class="hero-image">
-                    <img src="site/pngtree-wooden-table-with-plant-pot-highlighting-natural-wood-grain-and-smooth-image_17644462.webp" alt="Зарядка для Яндекс Алисы Мини 2">
+                    <img src="site/pic/pngtree-wooden-table-with-plant-pot-highlighting-natural-wood-grain-and-smooth-image_17644462.webp" alt="Зарядка для Яндекс Алисы Мини 2">
                 </div>
             </div>
         </div>
@@ -529,7 +529,7 @@
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Быстрая зарядка</h3>
-                    <p>Поддержка Quick Charge 3.0</p>
+                    <p>Поддержка Quick Charge</p>
                 </div>
             </div>
         </div>
@@ -632,51 +632,6 @@
         </div>
     </footer>
 
-    <script>
-        
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const closeMenuBtn = document.querySelector('.close-menu');
-        const navLinks = document.querySelector('.nav-links');
-        
-        if (mobileMenuBtn) {
-            mobileMenuBtn.addEventListener('click', () => {
-                navLinks.classList.add('active');
-                document.body.style.overflow = 'hidden'; 
-            });
-        }
-        
-        if (closeMenuBtn) {
-            closeMenuBtn.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                document.body.style.overflow = ''; 
-            });
-        }
-        
-        
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        });
-    </script>
+    <script src="site/js/index.js"></script>
 </body>
 </html>
